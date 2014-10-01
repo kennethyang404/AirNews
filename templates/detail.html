@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+
+<head>
+    <title>AirNews - Detail</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="AirNews - Detail" />
+    <meta name="keywords" content="HackCMU 2014" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detailStyle.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-wide.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-noscript.css') }}" type="text/css" />
+    <style>
+    div.scroll {
+        overflow-y: scroll;
+    }
+    </style>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body class="loading">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main" class="scroll">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>
+                    <font size="5pt">{{theOne.text}}</font>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <img src="{{ url_for('static', filename='css/images/home_button2.png') }}" height="70" width="70" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="copyright">
+                    <span class="copyright">HackCMU 2014</span>
+                </div>
+            </header>
+
+            <script>
+            function bigImg(x) {
+                x.style.height = "80px";
+                x.style.width = "80px";
+            }
+
+            function normalImg(x) {
+                x.style.height = "70px";
+                x.style.width = "70px";
+            }
+            </script>
+
+            <!-- Footer -->
+            <footer id="footer">
+
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

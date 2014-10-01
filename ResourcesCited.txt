@@ -1,0 +1,14 @@
+Code adopted from https://github.com/codebox/bayesian-classifier are:
+bayes.py
+status.py
+reset.py
+mode.py
+words.py
+learn.py
+db.py
+classify.py
+testharness.py
+
+the following file are taken from online sources
+spam_data.txt
+valid.txt

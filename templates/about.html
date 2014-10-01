@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+
+<head>
+    <title>AirNews - About</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="AirNews - About" />
+    <meta name="keywords" content="about" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-wide.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-noscript.css') }}" type="text/css">
+
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body class="loading">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>About</h1>
+                <p>Our current news system emphasizes worldly disasters and other heartbreaking, traumatic events as significant events to express to the world, but often, forgets that what we need most is news to make us smile, news to make us laugh… news to take a break from our everyday work.</br>
+Isn’t more personal news, the funny, quirky, and unique events of our day-to-day lives, equally important to share with the world? </br>
+So, just Share Your Message! And read interesting messages from other people around the world!</br>
+Simply go to "/create" and submit your piece. It can be Anyone to Anyone!</br>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <img src="{{ url_for('static', filename='css/images/home_button.png') }}" height="70" width="70" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <script>
+                function bigImg(x) {
+                    x.style.height = "90px";
+                    x.style.width = "90px";
+                }
+
+                function normalImg(x) {
+                    x.style.height = "80px";
+                    x.style.width = "80px";
+                }
+                </script>
+            </header>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">HackCMU 2014</span>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

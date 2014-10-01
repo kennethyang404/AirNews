@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+    Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+
+<head>
+    <title>AirNews - Create</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="AirNews - Create" />
+    <meta name="keywords" content="hackCMU 2014" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="{{ url_for('static',filename='js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/init.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/baseStyle.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-wide.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-noscript.css') }}" type="text/css" />
+
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body class="loading">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>Share your News with the World</h1>
+
+                <div class="create-form">
+                    <form method="POST" action="/newpost">
+                        <p>
+                            <font color="white">
+                                <strong>Title:</strong>
+                            </font>
+                        </p>
+
+                        <input class="create-title" name="post-title" placeholder="Vim > Emacs">
+                        </br>
+
+                        <p>
+                            <font color="white">
+                                <strong>Write your article below:</strong>
+                            </font>
+                        </p>
+
+                        <textarea class="create-text" name="post-text" placeholder="Vim is better than Emacs."></textarea>
+                        </br>
+                        </br>
+                        <input class="create-submit" type="submit" value="Send." />
+                    </form>
+                </div>
+            </header>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">HackCMU 2014</span>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
